@@ -50,5 +50,5 @@ for(var i=1; i<=100; i++){
   var Buzz = Math.floor(i / 5);
   var Fizz Buzz = math.floor(i / 15);
   li.textContent = i + 'Fizz' + 'Buzz' + 'Fizz Buzz' + i
-  document.getElementById('Fizz Buzz').appendChild(li);
+  document.getElementById('quiz').appendChild(li);
 }
