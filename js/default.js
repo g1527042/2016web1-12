@@ -46,9 +46,9 @@ document.getElementById('form').onsubmit = function(){
 
 for(var i=1; i<=100; i++){
   var li = document.createElement('li');
-  var Fizz = Math.floor(i / 3);
-  var Buzz = Math.floor(i / 5);
-  var Fizz_Buzz = Math.floor(i / 15);
-  li.textContent = i
+  var Fizz = (Math.floor(i / 3) === 0.0) ? 'Fizz' : '';
+  var Buzz = (Math.floor(i / 5) === 0.0) ? 'Buzz' : '';
+  var Fizz_Buzz = (Math.floor(i / 15) === 0.0) ? 'FizzBuss' : '';
+  li.textContent = i + Fizz + Buzz + Fizz_Buzz;
   document.getElementById('quiz').appendChild(li);
 }
