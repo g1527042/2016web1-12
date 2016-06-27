@@ -43,3 +43,12 @@ document.getElementById('form').onsubmit = function(){
   window.alert(document.getElementById('form').word.value);
   return false;
 };
+
+for(var i=1; i<=100; i++){
+  var li = document.createElement('li');
+  var Fizz = Math.floor(i / 3);
+  var Buzz = Math.floor(i / 5);
+  var Fizz Buzz = math.floor(i / 15);
+  li.textContent = i + 'Fizz' + 'Buzz' + 'Fizz Buzz' + i
+  document.getElementById('Fizz Buzz').appendChild(li);
+}
