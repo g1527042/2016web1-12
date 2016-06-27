@@ -48,6 +48,9 @@ for(var i=1; i<=100; i++){
   var li = document.createElement('li');
   var Fizz = (i % 3 === 0) ? 'Fizz' : '';
   var Buzz = (i % 5 === 0) ? 'Buzz' : '';
-  li.textContent = i + Fizz + Buzz;
+  if(i % 3 === 0 && i % 5 === 0){
+    li.textContent = Fizz + Buzz ;
+  }
+  li.textContent = i;
   document.getElementById('quiz').appendChild(li);
 }
